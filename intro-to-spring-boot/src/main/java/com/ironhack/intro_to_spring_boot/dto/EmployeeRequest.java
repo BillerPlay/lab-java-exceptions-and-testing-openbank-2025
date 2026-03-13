@@ -3,7 +3,7 @@ package com.ironhack.intro_to_spring_boot.dto;
 import com.ironhack.intro_to_spring_boot.enums.Status;
 import jakarta.validation.constraints.NotEmpty;
 
-public class EmployeeDTO {
+public class EmployeeRequest {
     @NotEmpty(message = "EmployeeId can't be empty")
     private Long employeeId;
 
@@ -16,7 +16,7 @@ public class EmployeeDTO {
     @NotEmpty(message = "Status can't be empty")
     private String status;
 
-    public EmployeeDTO(Long employeeId, String name, String department, String status) {
+    public EmployeeRequest(Long employeeId, String name, String department, String status) {
         this.employeeId = employeeId;
         this.name = name;
         this.department = department;

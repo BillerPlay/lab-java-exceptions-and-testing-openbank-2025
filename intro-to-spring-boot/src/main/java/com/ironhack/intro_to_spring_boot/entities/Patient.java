@@ -2,10 +2,12 @@ package com.ironhack.intro_to_spring_boot.entities;
 
 
 
+import jakarta.validation.constraints.NotBlank;
 import tools.jackson.databind.annotation.JsonSerialize;
 public class Patient {
     @JsonSerialize
     private Long patientId;
+    @NotBlank
     private String name;
     @JsonSerialize
     private String dateOfBirth;
